@@ -1,0 +1,1286 @@
+
+@inproceedings{lankes_exploring_2019,
+	address = {New York, NY, USA},
+	series = {{PLOS} '19},
+	title = {Exploring {Rust} for {Unikernel} {Development}},
+	isbn = {978-1-4503-7017-2},
+	url = {https://dl.acm.org/doi/10.1145/3365137.3365395},
+	doi = {10.1145/3365137.3365395},
+	abstract = {System-level development has been dominated by programming languages like C/C++ for decades. These languages are inherently unsafe, error-prone, and a major reason for vulnerabilities. High-level programming languages with a secure memory model and strong type system are able to improve the quality of the system software. In this paper, we explore the programming language Rust for kernel development and present RustyHermit, which is a unikernel completely written in Rust without any C/C++. We show that the support for RustyHermit can be transparently integratable in the Rust toolchain and common Rust applications are build-able on top of RustyHermit. Previously, we developed the C-based unikernel HermitCore with a similar design to RustyHermit and we are able to compare both kernels. We show that the performance of both kernels is similar and only {\textasciitilde}3.27 \% of RustyHermit relies on unsafe code, that cannot be checked by the compiler in detail.},
+	urldate = {2025-12-01},
+	booktitle = {Proceedings of the 10th {Workshop} on {Programming} {Languages} and {Operating} {Systems}},
+	publisher = {Association for Computing Machinery},
+	author = {Lankes, Stefan and Breitbart, Jens and Pickartz, Simon},
+	month = oct,
+	year = {2019},
+	pages = {8--15},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/M7G29YUT/Lankes et al. - 2019 - Exploring Rust for Unikernel Development.pdf:application/pdf},
+}
+
+@inproceedings{lankes_hermitcore_2016,
+	address = {Kyoto Japan},
+	title = {{HermitCore}: {A} {Unikernel} for {Extreme} {Scale} {Computing}},
+	isbn = {978-1-4503-4387-9},
+	shorttitle = {{HermitCore}},
+	url = {https://dl.acm.org/doi/10.1145/2931088.2931093},
+	doi = {10.1145/2931088.2931093},
+	language = {en},
+	urldate = {2025-12-01},
+	booktitle = {Proceedings of the 6th {International} {Workshop} on {Runtime} and {Operating} {Systems} for {Supercomputers}},
+	publisher = {ACM},
+	author = {Lankes, Stefan and Pickartz, Simon and Breitbart, Jens},
+	month = jun,
+	year = {2016},
+	pages = {1--8},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/SF3L6HRS/Lankes et al. - 2016 - HermitCore A Unikernel for Extreme Scale Computing.pdf:application/pdf},
+}
+
+@article{madhavapeddy_unikernels_2013,
+	title = {Unikernels: library operating systems for the cloud},
+	volume = {41},
+	issn = {0163-5964},
+	shorttitle = {Unikernels},
+	url = {https://dl.acm.org/doi/10.1145/2490301.2451167},
+	doi = {10.1145/2490301.2451167},
+	abstract = {We present
+              unikernels
+              , a new approach to deploying cloud services via applications written in high-level source code. Unikernels are single-purpose appliances that are compile-time specialised into standalone kernels, and sealed against modification when deployed to a cloud platform. In return they offer significant reduction in image sizes, improved efficiency and security, and should reduce operational costs. Our Mirage prototype compiles OCaml code into unikernels that run on commodity clouds and offer an order of magnitude reduction in code size without significant performance penalty. The architecture combines static type-safety with a single address-space layout that can be made immutable via a hypervisor extension. Mirage contributes a suite of type-safe protocol libraries, and our results demonstrate that the hypervisor is a platform that overcomes the hardware compatibility issues that have made past library operating systems impractical to deploy in the real-world.},
+	language = {en},
+	number = {1},
+	urldate = {2025-12-01},
+	journal = {ACM SIGARCH Computer Architecture News},
+	author = {Madhavapeddy, Anil and Mortier, Richard and Rotsos, Charalampos and Scott, David and Singh, Balraj and Gazagnaire, Thomas and Smith, Steven and Hand, Steven and Crowcroft, Jon},
+	month = mar,
+	year = {2013},
+	pages = {461--472},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/C6L6XI44/Madhavapeddy et al. - 2013 - Unikernels library operating systems for the cloud.pdf:application/pdf},
+}
+
+@mastersthesis{ruppert-maas_systematische_2025,
+	title = {Systematische {Analyse} und {Optimierung} eines {Unikernels} auf {RISC}-{V}: {Vergleich} mit einem minimalen {Linux} in ressourceneingeschränkten {Systemumgebungen}},
+	language = {German},
+	school = {University of Hagen},
+	author = {Ruppert-Maas, Marco},
+	month = jun,
+	year = {2025},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/7HLRUKSD/Ruppert-Maas - 2025 - Systematische Analyse und Optimierung eines Unikernels auf RISC-V Vergleich mit einem minimalen Lin.pdf:application/pdf},
+}
+
+@inproceedings{bratterud_includeos_2015,
+	title = {{IncludeOS}: {A} {Minimal}, {Resource} {Efficient} {Unikernel} for {Cloud} {Services}},
+	shorttitle = {{IncludeOS}},
+	url = {https://ieeexplore.ieee.org/abstract/document/7396164},
+	doi = {10.1109/CloudCom.2015.89},
+	abstract = {The emergence of cloud computing as a ubiquitous platform for elastically scaling services has generated need and opportunity for new types of operating systems. A service that needs to be both elastic and resource efficient needs A) highly specialized components, and B) to run with minimal resource overhead. Classical general purpose operating systems designed for extensive hardware support are by design far from meeting these requirements. In this paper we present IncludeOS, a single tasking library operating system for cloud services, written from scratch in C++. Key features include: extremely small disk-and memory footprint, efficient asynchronous I/O, OS-library where only what your service needs gets included, and only one device driver by default (virtio). As a test case a bootable disk image consisting of a simple DNS server with OS included is shown to require only 158 kb of disk space and to require 5-20\% less CPU-time, depending on hardware, compared to the same binary running on Linux.},
+	urldate = {2025-12-01},
+	booktitle = {2015 {IEEE} 7th {International} {Conference} on {Cloud} {Computing} {Technology} and {Science} ({CloudCom})},
+	author = {Bratterud, Alfred and Walla, Alf-Andre and Haugerud, Hårek and Engelstad, Paal E. and Begnum, Kyrre},
+	month = nov,
+	year = {2015},
+	keywords = {Cloud computing, full virtualization, Hardware, Libraries, library OS, Operating systems, Standards, unikernel, virtio, Virtual machine monitors, Virtual machining},
+	pages = {250--257},
+	file = {Full Text:/Users/sbutz/Zotero/storage/WAEZD2F2/Bratterud et al. - 2015 - IncludeOS A Minimal, Resource Efficient Unikernel for Cloud Services.pdf:application/pdf},
+}
+
+@inproceedings{porter_rethinking_2011,
+	address = {New York, NY, USA},
+	series = {{ASPLOS} {XVI}},
+	title = {Rethinking the library {OS} from the top down},
+	isbn = {978-1-4503-0266-1},
+	url = {https://dl.acm.org/doi/10.1145/1950365.1950399},
+	doi = {10.1145/1950365.1950399},
+	abstract = {This paper revisits an old approach to operating system construc-tion, the library OS, in a new context. The idea of the library OS is that the personality of the OS on which an application depends runs in the address space of the application. A small, fixed set of abstractions connects the library OS to the host OS kernel, offering the promise of better system security and more rapid independent evolution of OS components.We describe a working prototype of a Windows 7 library OS that runs the latest releases of major applications such as Microsoft Excel, PowerPoint, and Internet Explorer. We demonstrate that desktop sharing across independent, securely isolated, library OS instances can be achieved through the pragmatic reuse of net-working protocols. Each instance has significantly lower overhead than a full VM bundled with an application: a typical application adds just 16MB of working set and 64MB of disk footprint. We contribute a new ABI below the library OS that enables application mobility. We also show that our library OS can address many of the current uses of hardware virtual machines at a fraction of the overheads. This paper describes the first working prototype of a full commercial OS redesigned as a library OS capable of running significant applications. Our experience shows that the long-promised benefits of the library OS approach better protection of system integrity and rapid system evolution are readily obtainable.},
+	urldate = {2025-12-01},
+	booktitle = {Proceedings of the sixteenth international conference on {Architectural} support for programming languages and operating systems},
+	publisher = {Association for Computing Machinery},
+	author = {Porter, Donald E. and Boyd-Wickizer, Silas and Howell, Jon and Olinsky, Reuben and Hunt, Galen C.},
+	month = mar,
+	year = {2011},
+	pages = {291--304},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/FPNM6FKH/Porter et al. - 2011 - Rethinking the library OS from the top down.pdf:application/pdf},
+}
+
+@inproceedings{el_ioini_unikernels_2023,
+	address = {New York, NY, USA},
+	series = {{eSAAM} '23},
+	title = {Unikernels {Motivations}, {Benefits} and {Issues}: {A} {Multivocal} {Literature} {Review}},
+	isbn = {979-8-4007-0835-0},
+	shorttitle = {Unikernels {Motivations}, {Benefits} and {Issues}},
+	url = {https://dl.acm.org/doi/10.1145/3624486.3624492},
+	doi = {10.1145/3624486.3624492},
+	abstract = {While working in the cloud, the trend is to secure all the resources in order for the applications and systems to operate as efficiently as possible. Huge amounts of resources are wasted on unnecessary utilities and resource-consuming processes, which can rather have a negative effect. Unikernels are the last trend in this direction. We aim to shed light on the motivations, benefits, and issues in unikernels. Our goal is to systematically analyze what made this technology so attractive, identifying the benefits they have attained and the issues encountered in embracing this new technology. We surveyed academic and grey literature by means of the Multivocal Literature Review process, analyzing 590 sources, of which 62 reported motivations, benefits, and issues. The main motivations for adopting unikernels are performance and security, which are also reflected in the benefits reported. In terms of issues, the maturity of the existing frameworks as well as the tool support, are the main challenges that need to be addressed. Given the great potential that unikernels can bring in terms of performance and security, further research is needed to investigate the pros and cons, how to use them, and in which contexts they are beneficial.},
+	urldate = {2025-12-01},
+	booktitle = {Proceedings of the 3rd {Eclipse} {Security}, {AI}, {Architecture} and {Modelling} {Conference} on {Cloud} to {Edge} {Continuum}},
+	publisher = {Association for Computing Machinery},
+	author = {El Ioini, Nabil and El Majjodi, Ayoub and Hastbacka, David and Cerny, Tomas and Taibi, Davide},
+	month = oct,
+	year = {2023},
+	pages = {39--48},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/X2JUB45K/El Ioini et al. - 2023 - Unikernels Motivations, Benefits and Issues A Multivocal Literature Review.pdf:application/pdf},
+}
+
+@inproceedings{olivier_binary-compatible_2019,
+	address = {New York, NY, USA},
+	series = {{VEE} 2019},
+	title = {A binary-compatible unikernel},
+	isbn = {978-1-4503-6020-3},
+	url = {https://dl.acm.org/doi/10.1145/3313808.3313817},
+	doi = {10.1145/3313808.3313817},
+	abstract = {Unikernels are minimal single-purpose virtual machines. They are highly popular in the research domain due to the benefits they provide. A barrier to their widespread adoption is the difficulty/impossibility to port existing applications to current unikernels. HermiTux is the first unikernel providing binary-compatibility with Linux applications. It is composed of a hypervisor and lightweight kernel layer emulating OS interfaces at load- and runtime in accordance with the Linux ABI. HermiTux relieves application developers from the burden of porting software, while providing unikernel benefits such as security through hardware-assisted virtualized isolation, swift boot time, and low disk/memory footprint. Fast system calls and kernel modularity are enabled through binary rewriting and analysis techniques, as well as shared library substitution. Compared to other unikernels, HermiTux boots faster and has a lower memory/disk footprint. We demonstrate that over a range of native C/C++/Fortran/Python Linux applications, HermiTux performs similarly to Linux in most cases: its performance overhead averages 3\% in memory- and compute-bound scenarios.},
+	urldate = {2025-12-01},
+	booktitle = {Proceedings of the 15th {ACM} {SIGPLAN}/{SIGOPS} {International} {Conference} on {Virtual} {Execution} {Environments}},
+	publisher = {Association for Computing Machinery},
+	author = {Olivier, Pierre and Chiba, Daniel and Lankes, Stefan and Min, Changwoo and Ravindran, Binoy},
+	month = apr,
+	year = {2019},
+	pages = {59--73},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/8AFG2GZS/Olivier et al. - 2019 - A binary-compatible unikernel.pdf:application/pdf},
+}
+
+@inproceedings{kuo_linux_2020,
+	address = {New York, NY, USA},
+	series = {{EuroSys} '20},
+	title = {A {Linux} in unikernel clothing},
+	isbn = {978-1-4503-6882-7},
+	url = {https://dl.acm.org/doi/10.1145/3342195.3387526},
+	doi = {10.1145/3342195.3387526},
+	abstract = {Unikernels leverage library OS architectures to run isolated workloads on the cloud. They have garnered attention in part due to their promised performance characteristics such as small image size, fast boot time, low memory footprint and application performance. However, those that aimed at generality fall short of the application compatibility, robustness and, more importantly, community that is available for Linux. In this paper, we describe and evaluate Lupine Linux, a standard Linux system that---through kernel configuration specialization and system call overhead elimination---achieves unikernel-like performance, in fact outperforming at least one reference unikernel in all of the above dimensions. At the same time, Lupine can run any application (since it is Linux) when faced with more general workloads, whereas many unikernels simply crash. We demonstrate a graceful degradation of unikernel-like performance properties.},
+	urldate = {2025-12-01},
+	booktitle = {Proceedings of the {Fifteenth} {European} {Conference} on {Computer} {Systems}},
+	publisher = {Association for Computing Machinery},
+	author = {Kuo, Hsuan-Chi and Williams, Dan and Koller, Ricardo and Mohan, Sibin},
+	month = apr,
+	year = {2020},
+	pages = {1--15},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/Y5YX2VEE/Kuo et al. - 2020 - A Linux in unikernel clothing.pdf:application/pdf},
+}
+
+@inproceedings{eiling_gpu_2023,
+	address = {Denver CO USA},
+	title = {{GPU} {Acceleration} in {Unikernels} {Using} {Cricket} {GPU} {Virtualization}},
+	isbn = {979-8-4007-0785-8},
+	url = {https://dl.acm.org/doi/10.1145/3624062.3624236},
+	doi = {10.1145/3624062.3624236},
+	language = {en},
+	urldate = {2025-12-10},
+	booktitle = {Proceedings of the {SC} '23 {Workshops} of the {International} {Conference} on {High} {Performance} {Computing}, {Network}, {Storage}, and {Analysis}},
+	publisher = {ACM},
+	author = {Eiling, Niklas and Kröning, Martin and Klimt, Jonathan and Fensch, Philipp and Lankes, Stefan and Monti, Antonello},
+	month = nov,
+	year = {2023},
+	pages = {1588--1595},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/REAWE9JZ/Eiling et al. - 2023 - GPU Acceleration in Unikernels Using Cricket GPU Virtualization.pdf:application/pdf},
+}
+
+@inproceedings{arcangeli_increasing_2009,
+	address = {Montreal, Quebec, Canada},
+	title = {Increasing memory density by using {KSM}},
+	url = {https://gelit.ch/td/linux/pasche/09_KSM.pdf},
+	abstract = {With virtualization usage growing, the amount of RAM duplication in the same host across different virtual machines possibly running the same software or handling the same data is growing at a fast pace too. KSM is a Linux Kernel module that allows to share equal anonymous memory across different processes and in turn also across different KVM virtual machines. Thanks to the KVM design and the mmu notiﬁer feature, the KVM virtual machines aren’t any different from any other process from the Linux Virtual Memory subsystem POV. And incidentally all Guest physical memory is allocated as regular Linux anonymous memory mappings. But KSM isn’t just for virtual machines.},
+	language = {en},
+	urldate = {2025-12-15},
+	booktitle = {Proceedings of the linux symposium},
+	author = {Arcangeli, Andrea and Eidus, Izik and Wright, Chris},
+	year = {2009},
+	pages = {19--28},
+	file = {PDF:/Users/sbutz/Zotero/storage/FDQM7Y7R/Arcangeli et al. - Increasing memory density by using KSM.pdf:application/pdf},
+}
+
+@article{zhang_kylinx_2019,
+	title = {{KylinX}: {Simplified} {Virtualization} {Architecture} for {Specialized} {Virtual} {Appliances} with {Strong} {Isolation}},
+	volume = {37},
+	issn = {0734-2071, 1557-7333},
+	shorttitle = {{KylinX}},
+	url = {https://dl.acm.org/doi/10.1145/3436512},
+	doi = {10.1145/3436512},
+	abstract = {Unikernel specializes a minimalistic LibOS and a target application into a standalone single-purpose virtual machine (VM) running on a hypervisor, which is referred to as (virtual)
+              appliance
+              . Compared to traditional VMs, Unikernel appliances have smaller memory footprint and lower overhead while guaranteeing the same level of isolation. On the downside, Unikernel strips off the
+              process
+              abstraction from its monolithic appliance and thus sacrifices flexibility, efficiency, and applicability.
+            
+            In this article, we examine whether there is a balance embracing the best of both Unikernel appliances (strong isolation) and processes (high flexibility/efficiency). We present KylinX, a dynamic library operating system for simplified and efficient cloud virtualization by providing the pVM (process-like VM) abstraction. A pVM takes the hypervisor as an OS and the Unikernel appliance as a process allowing both page-level and library-level dynamic mapping. At the page level, KylinX supports pVM fork plus a set of API for inter-pVM communication (IpC, which is compatible with conventional UNIX IPC). At the library level, KylinX supports shared libraries to be linked to a Unikernel appliance at runtime. KylinX enforces mapping restrictions against potential threats. We implement a prototype of KylinX by modifying MiniOS and Xen tools. Extensive experimental results show that KylinX achieves similar performance both in micro benchmarks (fork, IpC, library update, etc.) and in applications (Redis, web server, and DNS server) compared to conventional processes, while retaining the strong isolation benefit of VMs/Unikernels.},
+	language = {en},
+	number = {1-4},
+	urldate = {2025-12-15},
+	journal = {ACM Transactions on Computer Systems},
+	author = {Zhang, Yiming and Zhang, Chengfei and Wang, Yaozheng and Yu, Kai and Xue, Guangtao and Crowcroft, Jon},
+	month = nov,
+	year = {2019},
+	pages = {1--27},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/GHDZ6SMR/Zhang et al. - 2019 - KylinX Simplified Virtualization Architecture for Specialized Virtual Appliances with Strong Isolat.pdf:application/pdf},
+}
+
+@inproceedings{kuenzer_unikraft_2021,
+	address = {Online Event United Kingdom},
+	title = {Unikraft: fast, specialized unikernels the easy way},
+	isbn = {978-1-4503-8334-9},
+	shorttitle = {Unikraft},
+	url = {https://dl.acm.org/doi/10.1145/3447786.3456248},
+	doi = {10.1145/3447786.3456248},
+	language = {en},
+	urldate = {2025-12-15},
+	booktitle = {Proceedings of the {Sixteenth} {European} {Conference} on {Computer} {Systems}},
+	publisher = {ACM},
+	author = {Kuenzer, Simon and Bădoiu, Vlad-Andrei and Lefeuvre, Hugo and Santhanam, Sharan and Jung, Alexander and Gain, Gaulthier and Soldani, Cyril and Lupu, Costin and Teodorescu, Ştefan and Răducanu, Costi and Banu, Cristian and Mathy, Laurent and Deaconescu, Răzvan and Raiciu, Costin and Huici, Felipe},
+	month = apr,
+	year = {2021},
+	pages = {376--394},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/EGBVRRKD/Kuenzer et al. - 2021 - Unikraft fast, specialized unikernels the easy way.pdf:application/pdf},
+}
+
+@mastersthesis{schoning_porting_2021,
+	title = {Porting and evaluation of a virtualized unikernel on {RISC}-{V}},
+	language = {English},
+	school = {RWTH Aachen University},
+	author = {Schöning, Simon},
+	year = {2021},
+	file = {PDF:/Users/sbutz/Zotero/storage/RE7MFULY/Schöning - 2021 - Porting and evaluation of a virtualized unikernel on RISC-V.pdf:application/pdf},
+}
+
+@article{park_beyond_2026,
+	title = {Beyond address spaces: {In}-process memory isolation for {RISC}-{V}},
+	volume = {163},
+	issn = {0167-4048},
+	shorttitle = {Beyond address spaces},
+	url = {https://www.sciencedirect.com/science/article/pii/S0167404825005012},
+	doi = {10.1016/j.cose.2025.104812},
+	abstract = {In-process memory isolation is a fundamental building block for modern security solutions, enabling the protection of sensitive data within a single process. To achieve in-process memory isolation, prior work has proposed either instruction-level or domain-based schemes. Instruction-level schemes offer fine-grained access control but struggle to scale, whereas domain-based schemes scale to multiple compartments yet lack fine-grained access control. This characteristic leads to restricted applications for each scheme. In this paper, we present Dom-V, a fine-grained and scalable in-process memory isolation technique that simultaneously supports instruction-level and domain-based schemes without requiring hardware modifications on RISC-V. Dom-V achieves this by leveraging the RISC-V Hypervisor extension, a ratified ISA extension. To demonstrate its effectiveness, we evaluate Dom-V across three representative use cases: shadow stack, encryption key protection, and JIT code page protection. Our experimental results indicate that Dom-V achieves secure and scalable in-process isolation with minimal performance overhead.},
+	urldate = {2026-01-25},
+	journal = {Computers \& Security},
+	author = {Park, Seonghwan and Kang, Hayoung and Kwon, Donghyun},
+	month = apr,
+	year = {2026},
+	keywords = {Hypervisor,, In-process memory isolation, RISC-V},
+	pages = {104812},
+	file = {ScienceDirect Full Text PDF:/Users/sbutz/Zotero/storage/VALZVF7P/Park et al. - 2026 - Beyond address spaces In-process memory isolation for RISC-V.pdf:application/pdf;ScienceDirect Snapshot:/Users/sbutz/Zotero/storage/7X5YHZC5/S0167404825005012.html:text/html},
+}
+
+@article{russell_virtio_2008,
+	title = {virtio: towards a de-facto standard for virtual {I}/{O} devices},
+	volume = {42},
+	issn = {0163-5980},
+	shorttitle = {virtio},
+	url = {https://dl.acm.org/doi/10.1145/1400097.1400108},
+	doi = {10.1145/1400097.1400108},
+	abstract = {The Linux Kernel currently supports at least 8 distinct virtualization systems: Xen, KVM, VMware's VMI, IBM's System p, IBM's System z, User Mode Linux, lguest and IBM's legacy iSeries. It seems likely that more such systems will appear, and until recently each of these had its own block, network, console and other drivers with varying features and optimizations.The attempt to address this is virtio: a series of efficient, well-maintained Linux drivers which can be adapted for various different hypervisor implementations using a shim layer. This includes a simple extensible feature mechanism for each driver. We also provide an obvious ring buffer transport implementation called vring, which is currently used by KVM and lguest. This has the subtle effect of providing a path of least resistance for any new hypervisors: supporting this efficient transport mechanism will immediately reduce the amount of work which needs to be done. Finally, we provide an implementation which presents the vring transport and device configuration as a PCI device: this means guest operating systems merely need a new PCI driver, and hypervisors need only add vring support to the virtual devices they implement (currently only KVM does this).This paper will describe the virtio API layer as implemented in Linux, then the vring implementation, and finally its embodiment in a PCI device for simple adoption on otherwise fully-virtualized guests. We'll wrap up with some of the preliminary work to integrate this I/O mechanism deeper into the Linux host kernel.},
+	number = {5},
+	urldate = {2026-01-25},
+	journal = {SIGOPS Oper. Syst. Rev.},
+	author = {Russell, Rusty},
+	month = jul,
+	year = {2008},
+	pages = {95--103},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/279GZQIU/Russell - 2008 - virtio towards a de-facto standard for virtual IO devices.pdf:application/pdf},
+}
+
+@article{hu_unishyper_2024,
+	title = {Unishyper: {A} {Rust}-based unikernel enhancing reliability and efficiency of embedded systems},
+	volume = {153},
+	issn = {13837621},
+	shorttitle = {Unishyper},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S138376212400136X},
+	doi = {10.1016/j.sysarc.2024.103199},
+	abstract = {Unikernels are simple, customizable, efficient, and small in code size, which makes them highly applicable to embedded scenarios. However, most existing unikernels are developed and optimized for cloud computing, and they do not fully meet the requirements of high reliability and platform customization in embedded environments. We propose Unishyper, a reliable and high-performance embedded unikernel in Rust. To support memory isolation between user applications, user code, and kernel code, Unishyper designs the Zone mechanism on top of Intel MPK. Unishyper further proposes a thread-level unwind strategy for safe fault handling while avoiding memory leakage. Finally, Unishyper supports fine-grained customization, seamlessly integrates with the Rust ecosystem, and uses Unilib for function offloading to further reduce image size. Our evaluation results show that Unishyper achieves better performance than peer unikernels on major microbenchmarks, can effectively stop illegal memory accesses across application boundaries, and has a minimal memory footprint of less than 100 KB.},
+	language = {en},
+	urldate = {2026-02-07},
+	journal = {Journal of Systems Architecture},
+	author = {Hu, Keyang and Huang, Wang and Wang, Lei and Mo, Ce and Wang, Runxiang and Chen, Yu and Ren, Ju and Jiang, Bo},
+	month = aug,
+	year = {2024},
+	pages = {103199},
+	file = {PDF:/Users/sbutz/Zotero/storage/W4AM6XML/Hu et al. - 2024 - Unishyper A Rust-based unikernel enhancing reliability and efficiency of embedded systems.pdf:application/pdf},
+}
+
+@mastersthesis{fuentes_morales_evaluating_2016,
+	series = {{TRITA}-{ICT}-{EX}},
+	title = {Evaluating {Gem5} and {QEMU} {Virtual} {Platforms} for {ARM} {Multicore} {Architectures}},
+	abstract = {Accurate virtual platforms allow for crucial, early, and inexpensive assessments about the viability and hardware constraints of software/hardware applications. The growth of multicore architectures in both number of cores and relevance in the industry, in turn, demands the emergence of faster and more efficient virtual platforms to make the benefits of single core simulation and emulation available to their multicore successors whilst maintaining accuracy, development costs, time, and efficiency at acceptable levels. The goal of this thesis is to find optimal virtual platforms to perform hardware design space exploration for multi-core architectures running filtering functions, particularly, a discrete signal filtering Matlab algorithm used for oil surveying applications running on an ARM Cortex-A53 quadcore CPU. In addition to the filtering algorithm, the PARSEC benchmark suite was also used to test platform compliance under workloads with diverse characteristics. Upon reviewing multiple virtual platforms, the gem5 simulator and the QEMU emulator were chosen to be tested due to their ubiquitousness, prominence and flexibility. A Raspberry Pi Model B was used as reference to measure how closely these tools can model a commonly used embedded platform. The results show that each of the virtual platforms is best suited for different scenarios. The QEMU emulator with KVM support yielded the best performance, albeit requiring access to a host with the same architecture as the target, and not guaranteeing timing accuracy. The most accurate setup was the gem5 simulator using a simplified cache system and an Out-of-Order detailed ARM CPU model.},
+	school = {KTH, School of Information and Communication Technology (ICT)},
+	author = {Fuentes Morales, Jose Luis Bismarck},
+	year = {2016},
+	note = {Backup Publisher: KTH, School of Information and Communication Technology (ICT)
+Issue: 2016:165},
+	keywords = {Benchmarking, emulation, GEM5, KVM, Matlab, Multicore, PARSEC, QEMU, signal filtering, simulation, virtual platforms},
+	file = {PDF:/Users/sbutz/Zotero/storage/7P5DZHYV/Fuentes Morales - 2016 - Evaluating Gem5 and QEMU Virtual Platforms for ARM Multicore Architectures.pdf:application/pdf},
+}
+
+@misc{eswin_eic7700x_2024,
+	title = {{EIC7700X} {SoC} {Technical} {Reference} {Manual}},
+	url = {https://github.com/eswincomputing/EIC7700X-SoC-Technical-Reference-Manual/releases},
+	urldate = {2026-08-02},
+	publisher = {ESWIN},
+	author = {ESWIN},
+	month = jan,
+	year = {2024},
+	file = {PDF:/Users/sbutz/Zotero/storage/DMACGDZM/ESWIN - 2024 - EIC7700X SoC Technical Reference Manual.pdf:application/pdf},
+}
+
+@misc{pine64_september_2024,
+	title = {September {Update}: {Check} {Your} {Notes}},
+	shorttitle = {September {Update}},
+	url = {https://pine64.org/2024/10/02/september_2024/},
+	urldate = {2026-08-02},
+	journal = {Community Blog},
+	author = {Pine64},
+	month = feb,
+	year = {2024},
+}
+
+@article{sreenivasan_construction_1974,
+	title = {On the construction of a representative synthetic workload},
+	volume = {17},
+	issn = {0001-0782},
+	url = {https://dl.acm.org/doi/10.1145/360860.360863},
+	doi = {10.1145/360860.360863},
+	abstract = {A general method of constructing a drive workload representative of a real workload is described. The real workload is characterized by its demands on the various system resources. These characteristics of the real workload are obtained from the system accounting data. The characteristics of the drive workload are determined by matching the joint probability density of the real workload with that of the drive workload. The drive workload is realized by using a synthetic program in which the characteristics can be varied by varying the appropriate parameters. Calibration experiments are conducted to determine expressions relating the synthetic program parameters with the workload characteristics. The general method is applied to the case of two variables, cpu seconds and number of I/O activities; and a synthetic workload with 88 jobs is constructed to represent a month's workload consisting of about 6000 jobs.},
+	number = {3},
+	urldate = {2026-02-15},
+	journal = {Commun. ACM},
+	author = {Sreenivasan, K. and Kleinman, A. J.},
+	month = mar,
+	year = {1974},
+	pages = {127--133},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/35MABU3N/Sreenivasan and Kleinman - 1974 - On the construction of a representative synthetic workload.pdf:application/pdf},
+}
+
+@book{hennessy_computer_2011,
+	title = {Computer {Architecture}: {A} {Quantitative} {Approach}},
+	isbn = {978-0-12-383873-5},
+	shorttitle = {Computer {Architecture}},
+	abstract = {Computer Architecture: A Quantitative Approach, Fifth Edition, explores the ways that software and technology in the cloud are accessed by digital media, such as cell phones, computers, tablets, and other mobile devices. The book, which became a part of Intel's 2012 recommended reading list for developers, covers the revolution of mobile computing. It also highlights the two most important factors in architecture today: parallelism and memory hierarchy. This fully updated edition is comprised of six chapters that follow a consistent framework: explanation of the ideas in each chapter; a crosscutting issues section, which presents how the concepts covered in one chapter connect with those given in other chapters; a putting it all together section that links these concepts by discussing how they are applied in real machine; and detailed examples of misunderstandings and architectural traps commonly encountered by developers and architects. Formulas for energy, static and dynamic power, integrated circuit costs, reliability, and availability are included. The book also covers virtual machines, SRAM and DRAM technologies, and new material on Flash memory. Other topics include the exploitation of instruction-level parallelism in high-performance processors, superscalar execution, dynamic scheduling and multithreading, vector architectures, multicore processors, and warehouse-scale computers (WSCs). There are updated case studies and completely new exercises. Additional reference appendices are available online. This book will be a valuable reference for computer architects, programmers, application developers, compiler and system software developers, computer system designers and application developers. - Part of Intel's 2012 Recommended Reading List for Developers - Updated to cover the mobile computing revolution - Emphasizes the two most important topics in architecture today: memory hierarchy and parallelism in all its forms. - Develops common themes throughout each chapter: power, performance, cost, dependability, protection, programming models, and emerging trends ("What's Next") - Includes three review appendices in the printed text. Additional reference appendices are available online. - Includes updated Case Studies and completely new exercises.},
+	language = {en},
+	publisher = {Elsevier},
+	author = {Hennessy, John L. and Patterson, David A.},
+	month = oct,
+	year = {2011},
+	keywords = {Computers / Computer Architecture},
+	file = {PDF:/Users/sbutz/Zotero/storage/MB6MKXRR/Hennessy and Patterson - 2011 - Computer Architecture A Quantitative Approach.pdf:application/pdf},
+}
+
+@misc{fragkoulis_advancing_2024,
+	title = {Advancing {Cloud} {Computing} {Capabilities} on gem5 by {Implementing} the {RISC}-{V} {Hypervisor} {Extension}},
+	url = {http://arxiv.org/abs/2411.12444},
+	doi = {10.48550/arXiv.2411.12444},
+	abstract = {This paper presents the implementation and evaluation of the H (hypervisor) extension for the RISC-V instruction set architecture (ISA) on top of the gem5 microarchitectural simulator. The RISC-V ISA, known for its simplicity and modularity, has seen widespread adoption in various computing domains. The H extension aims to enhance RISC-V's capabilities for cloud computing and virtualization. In this paper, we present the architectural integration of the H extension into gem5, an open-source, modular platform for computer system architecture research. We detail the modifications required in gem5's CPU models and virtualization support to accommodate the H extension. We also present evaluation results regarding the performance impact and functional correctness of the extension's implementation on gem5. This study not only provides a pathway for further research and development of RISC-V extensions but also contributes valuable insights into the optimization of the gem5 simulator for advanced architectural features.},
+	urldate = {2026-02-19},
+	publisher = {arXiv},
+	author = {Fragkoulis, George-Marios and Karystinos, Nikos and Papadimitriou, George and Gizopoulos, Dimitris},
+	month = nov,
+	year = {2024},
+	note = {arXiv:2411.12444 [cs]},
+	keywords = {Computer Science - Hardware Architecture},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/UBF8F8EL/Fragkoulis et al. - 2024 - Advancing Cloud Computing Capabilities on gem5 by Implementing the RISC-V Hypervisor Extension.pdf:application/pdf},
+}
+
+@article{sa_first_2022,
+	title = {A {First} {Look} at {RISC}-{V} {Virtualization} {From} an {Embedded} {Systems} {Perspective}},
+	volume = {71},
+	issn = {1557-9956},
+	url = {https://ieeexplore.ieee.org/document/9606600/},
+	doi = {10.1109/TC.2021.3124320},
+	abstract = {This article describes the first public implementation and evaluation of the latest version of the RISC-V hypervisor extension (H-extension v0.6.1) specification in a Rocket chip core. To perform a meaningful evaluation for modern multi-core embedded and mixed-criticality systems, we have ported Bao, an open-source static partitioning hypervisor, to RISC-V. We have also extended the RISC-V platform-level interrupt controller (PLIC) to enable direct guest interrupt injection with low and deterministic latency and we have enhanced the timer infrastructure to avoid trap and emulation overheads. Experiments were carried out in FireSim, a cycle-accurate, FPGA-accelerated simulator, and the system was also successfully deployed and tested in a Zynq UltraScale+ MPSoC ZCU104. Our hardware implementation was open-sourced and is currently in use by the RISC-V community towards the ratification of the H-extension specification.},
+	number = {9},
+	urldate = {2026-02-19},
+	journal = {IEEE Transactions on Computers},
+	author = {Sá, Bruno and Martins, José and Pinto, Sandro},
+	month = sep,
+	year = {2022},
+	keywords = {Hardware, Virtual machine monitors, Virtual machining, RISC-V, embedded systems, H-extension, hypervisor, mixed-criticality, partitioning, Registers, Rockets, Software, Virtualization},
+	pages = {2177--2190},
+	file = {Submitted Version:/Users/sbutz/Zotero/storage/RFJJEEHL/Sá et al. - 2022 - A First Look at RISC-V Virtualization From an Embedded Systems Perspective.pdf:application/pdf},
+}
+
+@misc{noauthor_risc-v_2025,
+	type = {Manual},
+	title = {The {RISC}-{V} {Instruction} {Set} {Manual}: {Volume} {II}: {Privileged} {Architecture}},
+	url = {https://docs.riscv.org/reference/isa/_attachments/riscv-privileged.pdf},
+	language = {en},
+	urldate = {2026-02-18},
+	publisher = {RISC-V International},
+	month = aug,
+	year = {2025},
+	file = {PDF:/Users/sbutz/Zotero/storage/BPHCCTJT/The RISC-V Instruction Set Manual Volume II Privileged Architecture.pdf:application/pdf},
+}
+
+@book{tanenbaum_modern_2014,
+	title = {Modern {Operating} {Systems}},
+	copyright = {Pearson Deutschland},
+	isbn = {978-1-292-06195-5},
+	url = {https://elibrary.pearson.de/book/99.150005/9781292061955},
+	abstract = {Modern Operating Systems, 4th Edition, is intended for introductory courses in Operating Systems in Computer Science, Computer Engineering, and Electrical Engineering programs. The widely anticipated revision of this worldwide best-seller incorporates the latest developments in operating systems (OS) technologies. The 4th Edition includes up-to-date materials on relevant OS. Tanenbaum also provides information on current research based on his experience as an operating systems researcher.},
+	language = {en},
+	urldate = {2026-02-20},
+	publisher = {Pearson International},
+	author = {Tanenbaum, Andrew and Bos, Herbert},
+	year = {2014},
+	file = {PDF:/Users/sbutz/Zotero/storage/UN58XLXB/Tanenbaum and Bos - 2014 - Modern Operating Systems.pdf:application/pdf},
+}
+
+@misc{lankes_hermit_2025,
+	title = {The {Hermit} {Kernel}},
+	url = {https://zenodo.org/records/14918547},
+	doi = {10.5281/zenodo.14918547},
+	abstract = {🚀 Features
+
+
+
+(virtio-spec) Don't explicitly take references to ConfigRegionAccess
+
+(virtio-spec) Add NotificationData
+
+(virtio-spec) Add Config field to mmio::DeviceRegisters
+
+(virtio-spec) Add network device status flags
+
+(virtio-spec) Add net::Config
+
+(virtio-spec) Add HashType and HashReport
+
+(virtio-spec) Add net command enums
+
+(virtio-spec) Add fs::Config
+
+(x86\_64) Print FDT
+
+(virtio-spec) Add Notification::idx
+
+(virtio-spec) Add virtq::DescF
+
+(virtio-spec) Add virtq::Desc and pvirtq::Desc
+
+(virtio-spec) Add virtq::UsedElem
+
+(virtio-spec) Add pvirtq::EventSuppress
+
+(virtio-spec) Add virtq::Avail and virtq::Used
+
+(virtio-spec) Add trait DeviceConfigSpace
+
+(newlib) Add support for riscv64
+
+(virtio-spec) Add vsock definitions
+
+(newlib) Add support for aarch64
+
+(xtask) Sanitize rustc for finding binutils
+
+(xtask) Sanitize rustup calls
+
+(xtask) Sanitize cargo for normal builds
+
+(xtask) Support relative paths
+
+(xtask) Add --artifact-dir option for builds
+
+(xtask) Allow starting the hypervisor using sudo
+
+(newlib) Remove sbrk
+
+Add strace feature
+
+Log jumping into application
+
+(env) Parse FDT bootargs on all platforms
+
+(env) Parse env=KEY=VALUE for env vars
+
+(uhyve) Don't override get\_application\_parameters
+
+UEFI MVP
+
+Add stable exit code message in non-Uhyve VMs
+
+(xtask) Set vcpu\_count for Firecracker
+
+(xtask) Create xtask ci rs subcommand
+
+(xtask) Add xtask ci c subcommand
+
+(log) Make HERMIT\_LOG\_LEVEL\_FILTER case-insensitive
+
+(panic) Resolve deadlock when panicking while printing
+
+Upgrade to Rust 2024
+
+(uhyve) Use absolute paths
+
+Weakly provide the sys\_errno\_location function for all errno access
+
+Add version note
+
+
+🐛 Bug Fixes
+
+
+
+(pci) Remove FnOnce workaround
+
+(virtio) Remove unused PciError::BadCapPtr
+
+(virtio/pci) Remove PciCfgAlt
+
+(pci) Make BAR pages no-execute
+
+(virtio) Make config generation checking transport independent
+
+(net/virtio/pci) Remove commented out code
+
+(virtio-spec) Rustdoc::broken\_intra\_doc\_links
+
+(net/virtio) Remove unused and wrong net command enums
+
+(virtio-spec) Make net::Config fields read-only
+
+(x86\_64/physicalmem) Rename detect\_from\_limits to detect\_from\_uhyve
+
+(virtqueue/packed) Simplify DrvNotif::enable\_specific
+
+(virtqueue/split) Set next\_idx for driver notifications
+
+(virtqueue/packed) Fix EventSuppr bitfield operations
+
+(virtqueue/packed) Check range on RING\_EVENT\_FLAGS\_DESC
+
+(virtqueue/packed) Use correct next\_idx
+
+(virtqueue/packed) Set flags according to wrap count
+
+(virtqueue/split) Fix off-by-one error
+
+(pci) Remove unused enum DeviceHeader
+
+(pci) Remove unused mod constants
+
+(pci) Remove unused PciDevice methods
+
+(virtqueue/split) Remove dead code
+
+(virtqueue/packed) Zero-initialize descriptors
+
+(virtqueue/packed) Don't change flags when not making available
+
+(virtqueue/packed) Check for descriptor exhaustion
+
+(virtq/split) Return id with the correct index for the chain head
+
+(virtio-spec) Export vsock feature bits
+
+(virtq) Move fuse\_entry\_out to payload
+
+(net/virtio) Push the correct number of packets to the queue
+
+(xtask) Keep CARGO\_HOME and RUSTUP\_HOME
+
+(xtask) Set current dir for sanitized binaries
+
+(xtask) Move builtins target dir into main one
+
+(syscalls) Unused\_imports
+
+(entropy) Unused\_imports
+
+(recmutex) Clippy::new\_without\_default
+
+(recmutex) Clippy::not\_unsafe\_ptr\_arg\_deref
+
+(tasks) Clippy::not\_unsafe\_ptr\_arg\_deref
+
+(riscv64/virtualmem) Dead\_code
+
+(xtask) Enable clippy for feature = "newlib"
+
+Boot application processors after initializing scheduler
+
+(fd) Clippy::too\_long\_first\_doc\_paragraph
+
+(x86\_64) Downgrade log level of page unmap
+
+(x86\_64/phys\_mem) Don't panic on empty FDT memory map
+
+Remove explicit link section attributes
+
+(aarch64) Remove unused get\_boot\_info\_address
+
+(entry) Only set boot info globals on first CPU core
+
+(riscv64) Validate entry signature
+
+(entry) Allow boot info null pointer
+
+(smp) Don't populate boot info pointer
+
+(x86\_64/smp) Remove boot\_info parameter
+
+(arch) Remove RAW\_BOOT\_INFO
+
+(arch) Make BOOT\_INFO a OnceCell
+
+Make Virtq require Send
+
+(pci) Put PCI devices into a cell
+
+(pci) Put PCI drivers into a cell
+
+(x86\_64) Put MMIO drivers into a cell
+
+(x86\_64/vga) Put VGA screen into mutex
+
+(aarch64) Put serial port into mutex
+
+(aarch64) Put GIC into mutex
+
+(net) Make GEM driver Send
+
+(riscv64) Put MMIO drivers into a cell
+
+(riscv64) Put available HARTs into a cell
+
+(shell) Unreachable\_code
+
+(shell) Unused\_variables
+
+(xtask) Enable shell feature
+
+clippy::needless\_lifetimes
+
+(aarch64/core\_local) clippy::pointers\_in\_nomem\_asm\_block
+
+(shell) Move shell into async task
+
+(arch) Migrate to naked\_asm in naked functions
+
+(riscv64) Remove manual align implementations
+
+(cfg) dead\_code
+
+(x86\_64/mem) Allow deallocating before kernel
+
+(x86\_64/paging) Extract map\_pages
+
+(x86\_64/paging) print\_page\_tables
+
+(x86\_64/paging) Rework disect
+
+(x86\_64/paging) Add print\_page\_table\_entries
+
+(virtqueue) Clippy::extra\_unused\_lifetimes
+
+(xtask) Build docs for each arch separately
+
+(x86\_64) Make kernel\_heap\_end a valid virtual address
+
+(x86\_64) Log interrupt even without handler
+
+(x86\_64) Check for null pointer in core\_scheduler
+
+(main) Enable interrupts after initializing scheduler
+
+(apic) Disable PIT interrupt
+
+(x86\_64) Use unaligned write for TLS pointer
+
+(apic) Fix width of MP config table entry type
+
+(xtask) Remove --verbose from Uhyve call
+
+(virtqueue) clippy::unnecessary\_map\_or
+
+(pci) clippy::question\_mark
+
+(syscalls) Use c\_char instead of u8
+
+(socket) Remove upstream-resolved allow
+
+(virtio-net) Use the correct number of buffers for merging
+
+(syscalls) Use ptr::byte\_add
+
+(syscalls) Remove useless pointer casts
+
+Enable clippy::string\_to\_string
+
+Enable clippy::ref\_as\_ptr
+
+Enable clippy::ptr\_as\_ptr
+
+Enable clippy::ptr\_cast\_constness
+
+Enable clippy::borrow\_as\_ptr
+
+Enable clippy::cast\_lossless
+
+Enable clippy::if\_not\_else
+
+Enable clippy::ignored\_unit\_patterns
+
+Enable clippy::manual\_let\_else
+
+Enable clippy::semicolon\_if\_nothing\_returned
+
+Enable clippy::ref\_option
+
+Enable clippy::explicit\_deref\_methods
+
+Enable clippy::default\_trait\_access
+
+Enable clippy::manual\_assert
+
+Enable clippy::inconsistent\_struct\_constructor
+
+Enable clippy::match\_wildcard\_for\_single\_variants
+
+Enable clippy::unreadable\_literal
+
+Enable clippy::separated\_literal\_suffix
+
+Enable clippy::decimal\_literal\_representation
+
+(dns) clippy::len\_zero
+
+(dns) clippy::useless\_conversion
+
+(xtask) Run clippy on feature = "dns"
+
+(xtask) Don't test feature = "shell" on unsupported arches
+
+(virtqueue) Make BufferElem::\{len,capacity\} return u32
+
+(uhyve) Fix improper unlink string handling
+
+(common-os) clippy::unreadable-literal
+
+(common-os) clippy::fn\_to\_numeric\_cast
+
+(common-os) clippy::unnecessary\_cast
+
+(common-os) clippy::result\_unit\_err
+
+(common-os) Expect dead\_code
+
+(aarch64) Fix compilation with feature = "common-os"
+
+(riscv64) Fix compilation with feature = "common-os"
+
+(xtask) Run clippy on feature = "common-os"
+
+(x86\_64) Use correct MSR for read\{fs,gs\}
+
+Allow building with all features
+
+(interrupts) unused\_imports
+
+(scheduler) dead\_code
+
+(rtl8139) clippy::if-not-else
+
+clippy::semicolon-if-nothing-returned
+
+(udp) clippy::ignored-unit-patterns
+
+(xtask) Clippy all features
+
+clippy::literal\_string\_with\_formatting\_args
+
+clippy::precedence
+
+(tests) static\_mut\_refs
+
+(tests) stable\_features
+
+(tests) Remove unused value\_fence
+
+(tests) Don't reexport in common
+
+(tests) Move parse to avoid dead\_code
+
+(tests) unsafe-op-in-unsafe-fn
+
+(tests) Allow dead\_code on test\_case\_runner
+
+(tests) Literals
+
+(tests/basic\_mem) Clippy
+
+(tests) clippy::uninit\_vec
+
+(tests/thread) Pointer casting
+
+(tests) clippy::result\_unit\_err
+
+(tests) Remove explicit QEMU debug exit
+
+(xtask) Run clippy on all targets
+
+(tests) Clean up comments
+
+Use \#[unsafe(no\_mangle)]
+
+Mark extern blocks as unsafe
+
+(macros) tail\_expr\_drop\_order
+
+(xtask) Use canonical cargo\_home location
+
+(xtask) Assume exe exists in cargo\_home
+
+(xtask) Add support testing for C-based HTTP servers
+
+(xtask) Don't assume exe exists in cargo\_home
+
+(paging) Support huge pages in debug function
+
+
+💼 Other
+
+
+
+Turn cmd from a tuple into a struct
+
+Separate response headers and payload
+
+Don't assume uninitialized objects to be initalized
+
+Don't expose uninit rsp to the fuse module
+
+Use DeviceAlloc for virtq allocations
+
+TransferTokens should always have a BufferToken
+
+Move common logic for making descriptor available into a function
+
+Remove unnecessary memory barriers
+
+Move common lines in conditional outside
+
+Move ctrl\_desc to TransferToken
+
+Merge Buffer variants
+
+Start MemDescrId from 0
+
+Delay MemDescrId assignment until push
+
+Handle id exhaustion
+
+Don't expose TransferTokens to the drivers
+
+Use the actual type for ctrl\_descs instead of MemDescr
+
+Don't modify flags for skipped descriptors
+
+Improve error handling
+
+Correctly parse irq-flags from dts
+
+(fs) Correct uhyve mount message
+
+(deps) Upgrade zerocopy to 0.8, fuse-abi to 0.2, and virtio-spec to 0.2
+
+Store only the most preferred capability of a type
+
+(qemu) Simplify memory calculation
+
+Close connection if data isn't available
+
+(deps) Update Cargo.lock
+
+(virtio-fs) Remove unnecessary to\_string()
+
+(vscode) Don't check all architectures
+
+Don't panic on initial unmap if page is not mapped
+
+(deps) Update Cargo.lock
+
+(deps) Remove x86
+
+Use the serial buffer hypercall instead of the byte-wise one
+
+(deps) Update hermit-entry to 0.10.2
+
+(deps) Don't specify minor version of bitflags crate
+
+(deps) Update Cargo.lock
+
+
+🚜 Refactor
+
+
+
+(virtio/pci) Remove offset, length fields
+
+(virtio/pci) Inline Origin into PciCap
+
+(virtio/pci) Rename PciCap::cap\_struct to PciCap::cap
+
+(virtio/pci) Remove cfg\_type, id from PciCap
+
+(virtio/pci) Migrate extra cap data reading to virtio-spec
+
+(pci) Implement set\_irq using EndpointHeader::update\_interrupt
+
+(virtio) Move notif\_data into virtio-spec
+
+(virtio) Remove memory newtypes
+
+(virtio) Use generic PCI memory\_map\_bar impl
+
+(net/virtio) Move transport modules into virtio module
+
+(net/virtio) Migrate Status to virtio-spec
+
+(net/virtio) Migrate NetDevCfgRaw to virtio-spec
+
+Rename virtio-spec dependency to virtio
+
+(virtio-spec) Move fs module into separate file
+
+(fs/virtio) Migrate FsDevCfgRaw to virtio-spec
+
+(x86\_64) Move Fdt creation into get\_fdt
+
+(x86\_64) Extract TOTAL\_MEMORY access
+
+(x86\_64) Extract PHYSICAL\_FREE\_LIST lock
+
+(virtqueue) Extract NotificationData creation
+
+(virtqueue/packed) Add RingIdx
+
+(virtqueue/packed) Migrate from zerocopy::little\_endian to virtio-spec
+
+(virtqueue) Migrate to DescrFlags to virtio-spec
+
+(virtqueue) Migrate Descriptor to virtio-spec
+
+(virtqueue/split) Migrate UsedElem to virtio-spec
+
+(virtqueue/packed) Migrate EventSuppr to virtio-spec
+
+(virtqueue) Migrate Descriptor to virtio-spec
+
+(virtqueue/split) Make accesses non-volatile
+
+(virtqueue/split) Rename GenericRing::index to idx
+
+(virtqueue/split) Migrate to virtq::Avail and virtq::Used
+
+(virtqueue/packed) Move avail and used flag handling to the ring
+
+Move fd::IoError to io::Error
+
+Add and use io::Result type
+
+(fuse) Migrate to fuse-abi crate
+
+(virtio) Adapt DeviceConfigSpace::read\_config\_with
+
+(virtio-spec) Import endian-num types from crate root
+
+(virtio-spec) Move NotificationData into separate module
+
+(virtio-spec) Feature-gate transport modules
+
+(virtq) Use safe types for virtq buffers
+
+(virtq) Represent avail and used buffers as distinct types
+
+(virtq) Eliminate RefCell and Rc usage
+
+Migrate to virtio-spec release
+
+(virtio-net) Remove unused is\_multi field
+
+(virtq) Reduce code duplication
+
+(xtask) Move sanitized cargo to crate root
+
+(xtask) Extract sanitize function
+
+(xtask) Extract fn project\_root
+
+(uhyve) Unify uhyve\_send
+
+(virtq) Remove intermediate virtqueue channels
+
+(arch) Move boot info into env
+
+(riscv64) Avoid redundant HARTS\_AVAILABLE access
+
+Remove arch-specific get\_fdt
+
+(mm) Memory check
+
+(x86\_64/physicalmem) Inline find\_all\_nodes
+
+(x86\_64/physicalmem) Simplify TOTAL\_MEMORY handling
+
+(x86\_64/acpi) Use methods for reading pointers
+
+(apic) Merge ioapic\_inton and ioapic\_intoff
+
+(apic) Simplify I/O APIC config
+
+(xtask) Make --smp hypervisor independent
+
+(xtask) Determine small in Rs
+
+(xtask) Extract arch in Rs
+
+(xtask) impl Display for Arch
+
+(pci) Remove explicit type
+
+Move lint config into Cargo.toml
+
+(console) Extract Console::write
+
+(stdio) Use Console::write
+
+(console) Extract Console::read
+
+(console) Centralize state
+
+(xtask) Extract clippy base
+
+(stdio) Migrate to uhyve-interface
+
+(acpi) Migrate from x86 crate to x86\_64 crate
+
+(apic) Migrate MSR access to x86\_64 crate
+
+(apic) Migrate CR3 access to x86\_64 crate
+
+(apic) Vendor MSR constants
+
+(gdt) Migrate CR3 access to x86\_64 crate
+
+(kernel) Migrate CR0 and CR4 access to x86\_64 crate
+
+(pci) Migrate to x86\_64 crate
+
+(pic) Migrate to x86\_64 crate
+
+(pit) Migrate to x86\_64 crate
+
+(processor) Migrate CR0, CR4, and XCR0 access to x86\_64 crate
+
+(processor) Migrate FS and GS access to x86\_64 crate
+
+(processor) Migrate halt() to x86\_64 crate
+
+(processor) Migrate EFER setup to x86\_64 crate
+
+(processor) Migrate CPUID access to raw\_cpuid crate
+
+(processor) Decrease unsafe scope
+
+(processor) Migrate MSR access to x86\_64 crate
+
+(processor) Use specialized functions for STAR, LSTAR, and SFMASK access
+
+(processor) Use safe function for STAR access
+
+(systemtime) Migrate port access to x86\_64 crate
+
+(vga) Migrate port access to x86\_64 crate
+
+(mm) Migrate CR3 access to x86\_64 crate
+
+(rtl8139) Migrate port access to x86\_64 crate
+
+(uhyve) Migrate port access to x86\_64 crate
+
+
+📚 Documentation
+
+
+
+(virtio-spec) Add missing doc aliases
+
+(virtio-spec) pvirtq module docs typo
+
+
+⚡ Performance
+
+
+
+(arch) Relax TOTAL\_MEMORY accesses
+
+Make network buffers a power of two
+
+
+🎨 Styling
+
+
+
+(virtio-spec) Format code in doc comments
+
+(x86\_64/paging) Stray comma
+
+(gem) Rename RecieveStatus to ReceiveStatus
+
+Fix typos
+
+Add typos.toml
+
+(xtask) Add semicolons
+
+Format hex literals as lowercase
+
+Dont use core as ::core outside of macros
+
+Use Rust 2024 style edition
+
+(ci) Format
+
+
+🧪 Testing
+
+
+
+Add get\_application\_parameters test
+
+
+⚙️ Miscellaneous Tasks
+
+
+
+(Cargo.toml) Sort features
+
+Migrate to maintained rustsec/audit-check
+
+Add typos job
+
+Remove caching},
+	urldate = {2026-02-20},
+	publisher = {Zenodo},
+	author = {Lankes, Stefan and Kröning, Martin and Finck, Colin and Şahin, Çağatay Yiğit and Krebs, Daniel and Schwender, Jonathan and Breitbart, Jens and Contributors, The Hermit Project},
+	month = jan,
+	year = {2025},
+	file = {Snapshot:/Users/sbutz/Zotero/storage/UE2FESIW/14918547.html:text/html},
+}
+
+@article{madhavapeddy_unikernels_2013-1,
+	title = {Unikernels: {Rise} of the {Virtual} {Library} {Operating} {System}: {What} if all the software layers in a virtual appliance were compiled within the same safe, high-level language framework?},
+	volume = {11},
+	issn = {1542-7730, 1542-7749},
+	shorttitle = {Unikernels},
+	url = {https://dl.acm.org/doi/10.1145/2557963.2566628},
+	doi = {10.1145/2557963.2566628},
+	abstract = {Cloud computing has been pioneering the business of renting computing resources in large data centers to multiple (and possibly competing) tenants. The basic enabling technology for the cloud is operating-system virtualization such as Xen1 or VMWare, which allows customers to multiplex VMs (virtual machines) on a shared cluster of physical machines. Each VM presents as a self-contained computer, booting a standard operating-system kernel and running unmodified applications just as if it were executing on a physical machine.},
+	language = {en},
+	number = {11},
+	urldate = {2026-02-20},
+	journal = {Queue},
+	author = {Madhavapeddy, Anil and Scott, David J.},
+	month = nov,
+	year = {2013},
+	pages = {30--44},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/A8HV7E84/Madhavapeddy and Scott - 2013 - Unikernels Rise of the Virtual Library Operating System What if all the software layers in a virtu.pdf:application/pdf},
+}
+
+@book{smith_virtual_2010,
+	address = {Amsterdam Boston},
+	series = {The {Morgan} {Kaufmann} {Series} in {Computer} {Architecture} and {Design}},
+	title = {Virtual machines: versatile platforms for systems and processes},
+	isbn = {978-1-55860-910-5 978-0-08-052540-2},
+	shorttitle = {Virtual machines},
+	language = {eng},
+	publisher = {Morgan Kaufmann Publishers},
+	editor = {Smith, James E. and Nair, Ravi},
+	year = {2010},
+	file = {PDF:/Users/sbutz/Zotero/storage/S22DQWX6/Smith and Nair - 2010 - Virtual machines versatile platforms for systems and processes.pdf:application/pdf},
+}
+
+@inproceedings{whitaker_scale_2002,
+	title = {Scale and {Performance} in the {Denali} {Isolation} {Kernel}},
+	url = {https://www.usenix.org/conference/osdi-02/scale-and-performance-denali-isolation-kernel},
+	language = {en},
+	urldate = {2026-02-20},
+	author = {Whitaker, Andrew and Shaw, Marianne and Gribble, Steven D.},
+	year = {2002},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/GEUE9I5M/Whitaker et al. - 2002 - Scale and Performance in the Denali Isolation Kernel.pdf:application/pdf},
+}
+
+@inproceedings{kivity_kvm_2007,
+	title = {kvm: the {Linux} virtual machine monitor},
+	volume = {1},
+	number = {8},
+	booktitle = {Proceedings of the {Linux} symposium},
+	publisher = {Dttawa, Dntorio, Canada},
+	author = {Kivity, Avi and Kamay, Yaniv and Laor, Dor and Lublin, Uri and Liguori, Anthony},
+	year = {2007},
+	pages = {225--230},
+	file = {PDF:/Users/sbutz/Zotero/storage/VBKFKNR7/Kivity et al. - 2007 - kvm the Linux virtual machine monitor.pdf:application/pdf},
+}
+
+@inproceedings{bellard_qemu_2005,
+	title = {{QEMU}, a fast and portable dynamic translator.},
+	booktitle = {Usenix {ATC}, {Freenix} {Track}},
+	author = {Bellard, Fabrice and {others}},
+	year = {2005},
+	pages = {41--46},
+	file = {PDF:/Users/sbutz/Zotero/storage/AJWALYJ5/Bellard and others - 2005 - QEMU, a fast and portable dynamic translator..pdf:application/pdf},
+}
+
+@article{dall_kvmarm_2014,
+	title = {{KVM}/{ARM}: the design and implementation of the linux {ARM} hypervisor},
+	volume = {49},
+	number = {4},
+	journal = {Acm Sigplan Notices},
+	publisher = {ACM New York, NY, USA},
+	author = {Dall, Christoffer and Nieh, Jason},
+	year = {2014},
+	pages = {333--348},
+	file = {PDF:/Users/sbutz/Zotero/storage/CUMGGSTW/Dall and Nieh - 2014 - KVMARM the design and implementation of the linux ARM hypervisor.pdf:application/pdf},
+}
+
+@phdthesis{scheffel_simulation_2018,
+	type = {Diploma {Thesis}},
+	title = {Simulation of {RISC}-{V} based {Systems} in gem5},
+	url = {https://cfaed.tu-dresden.de/files/Images/people/chair-cc/theses/1808_Scheffel.pdf},
+	language = {English},
+	urldate = {2026-02-18},
+	school = {TU Dresden},
+	author = {Scheffel, Robert},
+	month = aug,
+	year = {2018},
+	file = {PDF:/Users/sbutz/Zotero/storage/5M97K8VG/Hempel and Castrillon - Simulation of RISC-V based Systems in gem5.pdf:application/pdf},
+}
+
+@article{mytkowicz_producing_2009,
+	title = {Producing wrong data without doing anything obviously wrong!},
+	volume = {44},
+	issn = {0362-1340},
+	url = {https://dl.acm.org/doi/10.1145/1508284.1508275},
+	doi = {10.1145/1508284.1508275},
+	abstract = {This paper presents a surprising result: changing a seemingly innocuous aspect of an experimental setup can cause a systems researcher to draw wrong conclusions from an experiment. What appears to be an innocuous aspect in the experimental setup may in fact introduce a significant bias in an evaluation. This phenomenon is called measurement bias in the natural and social sciences.Our results demonstrate that measurement bias is significant and commonplace in computer system evaluation. By significant we mean that measurement bias can lead to a performance analysis that either over-states an effect or even yields an incorrect conclusion. By commonplace we mean that measurement bias occurs in all architectures that we tried (Pentium 4, Core 2, and m5 O3CPU), both compilers that we tried (gcc and Intel's C compiler), and most of the SPEC CPU2006 C programs. Thus, we cannot ignore measurement bias. Nevertheless, in a literature survey of 133 recent papers from ASPLOS, PACT, PLDI, and CGO, we determined that none of the papers with experimental results adequately consider measurement bias.Inspired by similar problems and their solutions in other sciences, we describe and demonstrate two methods, one for detecting (causal analysis) and one for avoiding (setup randomization) measurement bias.},
+	number = {3},
+	urldate = {2026-02-20},
+	journal = {SIGPLAN Not.},
+	author = {Mytkowicz, Todd and Diwan, Amer and Hauswirth, Matthias and Sweeney, Peter F.},
+	month = mar,
+	year = {2009},
+	pages = {265--276},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/GHHWK2E2/Mytkowicz et al. - 2009 - Producing wrong data without doing anything obviously wrong!.pdf:application/pdf},
+}
+
+@inproceedings{georges_statistically_2007,
+	address = {New York, NY, USA},
+	series = {{OOPSLA} '07},
+	title = {Statistically rigorous java performance evaluation},
+	isbn = {978-1-59593-786-5},
+	url = {https://dl.acm.org/doi/10.1145/1297027.1297033},
+	doi = {10.1145/1297027.1297033},
+	abstract = {Java performance is far from being trivial to benchmark because it is affected by various factors such as the Java application, its input, the virtual machine, the garbage collector, the heap size, etc. In addition, non-determinism at run-time causes the execution time of a Java program to differ from run to run. There are a number of sources of non-determinism such as Just-In-Time (JIT) compilation and optimization in the virtual machine (VM) driven by timer-based method sampling, thread scheduling, garbage collection, and various.There exist a wide variety of Java performance evaluation methodologies usedby researchers and benchmarkers. These methodologies differ from each other in a number of ways. Some report average performance over a number of runs of the same experiment; others report the best or second best performance observed; yet others report the worst. Some iterate the benchmark multiple times within a single VM invocation; others consider multiple VM invocations and iterate a single benchmark execution; yet others consider multiple VM invocations and iterate the benchmark multiple times.This paper shows that prevalent methodologies can be misleading, and can even lead to incorrect conclusions. The reason is that the data analysis is not statistically rigorous. In this paper, we present a survey of existing Java performance evaluation methodologies and discuss the importance of statistically rigorous data analysis for dealing with non-determinism. We advocate approaches to quantify startup as well as steady-state performance, and, in addition, we provide the JavaStats software to automatically obtain performance numbers in a rigorous manner. Although this paper focuses on Java performance evaluation, many of the issues addressed in this paper also apply to other programming languages and systems that build on a managed runtime system.},
+	urldate = {2026-02-20},
+	booktitle = {Proceedings of the 22nd annual {ACM} {SIGPLAN} conference on {Object}-oriented programming systems, languages and applications},
+	publisher = {Association for Computing Machinery},
+	author = {Georges, Andy and Buytaert, Dries and Eeckhout, Lieven},
+	month = oct,
+	year = {2007},
+	pages = {57--76},
+	file = {Full Text PDF:/Users/sbutz/Zotero/storage/VGBZU4K6/Georges et al. - 2007 - Statistically rigorous java performance evaluation.pdf:application/pdf},
+}
